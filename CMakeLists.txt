@@ -14,6 +14,14 @@ set(paddle_src CACHE INTERNAL "" FORCE)
 include(ccache)
 include(core)
 include(third_party)
+include(flags)
+
+# compile flags
+set(COMMON_FLAGS -fPIC)
+foreach(flag ${COMMON_FLAGS})
+  safe_set_cflag(CMAKE_C_FLAGS ${flag})
+  safe_set_cxxflag(CMAKE_CXX_FLAGS ${flag})
+endforeach()
 
 include_directories("${CMAKE_CURRENT_SOURCE_DIR}")
 add_subdirectory(common)
