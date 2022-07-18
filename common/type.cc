@@ -16,7 +16,7 @@
 
 #include <utility>
 
-namespace infrt {
+namespace model_parser {
 namespace common {
 
 struct Type::Storage {
@@ -355,4 +355,4 @@ const Type &UI1() {
 }
 
 }  // namespace common
-}  // namespace infrt
+}  // namespace model_parser

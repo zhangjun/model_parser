@@ -18,7 +18,7 @@
 
 #include "common/shared.h"
 
-namespace infrt {
+namespace model_parser {
 namespace common {
 
 template <typename T>
@@ -78,4 +78,4 @@ using object_ptr = Object*;
 using shared_object = Shared<Object>;
 
 }  // namespace common
-}  // namespace infrt
+}  // namespace model_parser

@@ -22,7 +22,7 @@
 
 // #include "llvm/ADT/STLExtras.h"
 
-namespace infrt {
+namespace model_parser {
 
 // Utility template for tag dispatching.
 template <typename T>
@@ -145,4 +145,4 @@ using detected_or = internal::detector<Default, void, Op, Args...>;
 template <template <class...> class Op, class... Args>
 constexpr bool is_detected_v = is_detected<Op, Args...>::value;
 
-}  // namespace infrt
+}  // namespace model_parser

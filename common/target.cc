@@ -16,7 +16,7 @@
 
 #include <glog/logging.h>
 
-namespace infrt {
+namespace model_parser {
 namespace common {
 
 bool Target::operator==(const Target &other) const {
@@ -115,4 +115,4 @@ std::ostream &operator<<(std::ostream &os, Target::Arch arch) {
 }
 
 }  // namespace common
-}  // namespace infrt
+}  // namespace model_parser

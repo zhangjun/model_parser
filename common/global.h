@@ -18,7 +18,7 @@
 
 #include "paddle/infrt/tensor/dense_host_tensor.h"
 
-namespace infrt {
+namespace model_parser {
 
 // global variables
 class Global {
@@ -30,4 +30,4 @@ class Global {
   static mlir::MLIRContext *getMLIRContext();
 };  // class Global
 
-}  // namespace infrt
+}  // namespace model_parser

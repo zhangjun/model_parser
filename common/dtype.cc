@@ -14,7 +14,7 @@
 
 #include "paddle/infrt/common/dtype.h"
 
-namespace infrt {
+namespace model_parser {
 
 const char* DType::name() const {
   switch (kind_) {
@@ -47,4 +47,4 @@ size_t DType::GetHostSize() const {
   return 0;
 }
 
-}  // namespace infrt
+}  // namespace model_parser

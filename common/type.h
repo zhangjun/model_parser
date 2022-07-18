@@ -22,7 +22,7 @@
 
 //! Much of the concepts are borrowed from Halide project.
 
-namespace infrt {
+namespace model_parser {
 namespace common {
 
 /**
@@ -220,4 +220,4 @@ inline Type type_of<double*>() {
 std::ostream& operator<<(std::ostream& os, Type::type_t t);
 
 }  // namespace common
-}  // namespace infrt
+}  // namespace model_parser

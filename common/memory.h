@@ -22,7 +22,7 @@
 #include "common/macros.h"
 #include "common/target.h"
 
-namespace infrt {
+namespace model_parser {
 
 class MemoryInterface {
  public:
@@ -73,4 +73,4 @@ class MemoryManager final {
   INFRT_DISALLOW_COPY_AND_ASSIGN(MemoryManager);
 };
 
-}  // namespace infrt
+}  // namespace model_parser

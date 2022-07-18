@@ -19,7 +19,7 @@
 #include "paddle/framework.pb.h"
 #include "support/variant.h"
 
-namespace infrt {
+namespace model_parser {
 namespace paddle {
 namespace pb {
 
@@ -199,4 +199,4 @@ void OpDesc::SetAttr<std::vector<int>>(const std::string &name,
 
 }  // namespace pb
 }  // namespace paddle
-}  // namespace infrt
+}  // namespace model_parser

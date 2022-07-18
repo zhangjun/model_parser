@@ -17,7 +17,7 @@
 #include <ostream>
 #include <vector>
 
-namespace infrt {
+namespace model_parser {
 namespace common {
 
 struct Target {
@@ -109,4 +109,4 @@ static const Target& DefaultNVGPUTarget() {
 std::ostream& operator<<(std::ostream& os, Target::Arch arch);
 
 }  // namespace common
-}  // namespace infrt
+}  // namespace model_parser

@@ -23,7 +23,7 @@
 #include "paddle/cpp/desc_api.h"
 #include "paddle/framework.pb.h"
 
-namespace infrt {
+namespace model_parser {
 namespace paddle {
 namespace pb {
 namespace framework_proto = ::paddle::framework::proto;
@@ -125,4 +125,4 @@ class VarDesc : public cpp::VarDescAPI {
 
 }  // namespace pb
 }  // namespace paddle
-}  // namespace infrt
+}  // namespace model_parser

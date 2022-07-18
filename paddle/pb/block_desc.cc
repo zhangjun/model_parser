@@ -14,7 +14,7 @@
 
 #include "paddle/pb/block_desc.h"
 
-namespace infrt {
+namespace model_parser {
 namespace paddle {
 namespace pb {
 
@@ -44,4 +44,4 @@ framework_proto::OpDesc* BlockDesc::AddOp<framework_proto::OpDesc>() {
 
 }  // namespace pb
 }  // namespace paddle
-}  // namespace infrt
+}  // namespace model_parser

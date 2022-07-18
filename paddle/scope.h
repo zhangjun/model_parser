@@ -22,7 +22,7 @@
 #include "paddle/tensor.h"
 #include "support/variant.h"
 
-namespace infrt {
+namespace model_parser {
 namespace paddle {
 
 using _Variable = Variant<Tensor>;
@@ -64,4 +64,4 @@ _Variable* Scope::Var(const std::string& name) {
 }
 
 }  // namespace paddle
-}  // namespace infrt
+}  // namespace model_parser

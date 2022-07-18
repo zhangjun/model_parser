@@ -21,7 +21,7 @@
 #include "common/target.h"
 #include "common/type.h"
 
-namespace infrt {
+namespace model_parser {
 
 // export some general concepts.
 using common::make_shared;
@@ -58,4 +58,4 @@ static void CheckVarNameValid(const std::string& name) {
       << "Some invalid character found";
 }
 
-}  // namespace infrt
+}  // namespace model_parser

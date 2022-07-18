@@ -14,7 +14,7 @@
 
 #include "paddle/infrt/common/memory.h"
 
-namespace infrt {
+namespace model_parser {
 
 using infrt::common::Target;
 
@@ -39,4 +39,4 @@ MemoryManager::MemoryManager() {
   Register(Target::Arch::X86, new X86MemoryMng);
 }
 
-}  // namespace infrt
+}  // namespace model_parser

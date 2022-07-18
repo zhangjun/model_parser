@@ -19,7 +19,7 @@
 
 #include <cmath>
 
-namespace infrt {
+namespace model_parser {
 void Buffer::Resize(uint32_t size) {
   if (size_ > 0) {
     Free();
@@ -95,4 +95,4 @@ void Buffer::ResizeLazy(uint32_t alignment,
   ResizeLazy(alignment, size);
 }
 
-}  // namespace infrt
+}  // namespace model_parser

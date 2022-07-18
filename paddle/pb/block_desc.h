@@ -18,7 +18,7 @@
 #include "paddle/cpp/desc_api.h"
 #include "paddle/framework.pb.h"
 
-namespace infrt {
+namespace model_parser {
 namespace paddle {
 namespace pb {
 
@@ -78,4 +78,4 @@ class BlockDesc : public cpp::BlockDescAPI {
 
 }  // namespace pb
 }  // namespace paddle
-}  // namespace infrt
+}  // namespace model_parser

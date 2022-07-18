@@ -14,6 +14,6 @@
 
 #include "paddle/infrt/common/object.h"
 
-namespace infrt {
+namespace model_parser {
 namespace common {}  // namespace common
-}  // namespace infrt
+}  // namespace model_parser

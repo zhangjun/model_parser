@@ -18,7 +18,7 @@
 #include <cstdint>
 #include <string>
 
-namespace infrt {
+namespace model_parser {
 class DType {
  public:
   enum class Kind : uint8_t {
@@ -82,4 +82,4 @@ INFRT_IMPL_GET_DTYPE(float, F32);
 INFRT_IMPL_GET_DTYPE(double, F64);
 INFRT_IMPL_GET_DTYPE(std::string, STRING);
 
-}  // namespace infrt
+}  // namespace model_parser

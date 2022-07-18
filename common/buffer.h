@@ -22,7 +22,7 @@
 #include "common/memory.h"
 #include "common/target.h"
 
-namespace infrt {
+namespace model_parser {
 
 #ifdef __cplusplus
 extern "C" {
@@ -293,4 +293,4 @@ struct Buffer final {
   MemoryInterface* memory_mng_cache_{};
 };
 
-}  // namespace infrt
+}  // namespace model_parser

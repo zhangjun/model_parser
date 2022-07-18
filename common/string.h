@@ -18,8 +18,8 @@
 #include <string>
 #include <vector>
 
-namespace infrt {
-namespace infrt {
+namespace model_parser {
+namespace model_parser {
 
 //! Get the content of a stream.
 template <typename T>
@@ -80,5 +80,5 @@ std::string GetStreamCnt(const T& x) {
 
 std::string TransValidVarName(std::string name);
 
-}  // namespace infrt
-}  // namespace infrt
+}  // namespace model_parser
+}  // namespace model_parser

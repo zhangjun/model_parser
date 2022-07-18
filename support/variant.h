@@ -25,7 +25,7 @@
 
 #include "support/type_traits.h"
 
-namespace infrt {
+namespace model_parser {
 
 // A Variant similar to absl::variant in C++17.
 //
@@ -217,4 +217,4 @@ decltype(auto) visit(F&& f, Variant&& v) {
                                std::integral_constant<int, 0>());
 }
 
-}  // namespace infrt
+}  // namespace model_parser

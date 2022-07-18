@@ -14,7 +14,7 @@
 
 #include "paddle/pb/op_desc.h"
 
-namespace infrt {
+namespace model_parser {
 namespace paddle {
 namespace pb {
 
@@ -140,4 +140,4 @@ GET_ATTRS_IMPL(std::vector<int64_t>, longs);
 
 }  // namespace pb
 }  // namespace paddle
-}  // namespace infrt
+}  // namespace model_parser

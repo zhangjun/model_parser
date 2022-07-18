@@ -26,7 +26,7 @@
 #include "paddle/phi/common/data_type.h"
 #endif
 
-namespace infrt {
+namespace model_parser {
 namespace paddle {
 
 int SizeOfType(framework_proto::VarType::Type type) {
@@ -266,4 +266,4 @@ void DeserializeFromStream(std::istream &is,
 #endif
 
 }  // namespace paddle
-}  // namespace infrt
+}  // namespace model_parser

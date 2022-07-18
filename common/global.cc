@@ -14,7 +14,7 @@
 
 #include "paddle/infrt/common/global.h"
 
-namespace infrt {
+namespace model_parser {
 
 Global::Global() {}
 
@@ -27,4 +27,4 @@ mlir::MLIRContext* Global::getMLIRContext() {
   return context;
 }
 
-}  // namespace infrt
+}  // namespace model_parser

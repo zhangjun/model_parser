@@ -14,6 +14,6 @@
 
 #include "paddle/tensor.h"
 
-namespace infrt {
+namespace model_parser {
 namespace paddle {}  // namespace paddle
-}  // namespace infrt
+}  // namespace model_parser

@@ -18,7 +18,7 @@
 #include <string>
 #include <vector>
 
-namespace infrt {
+namespace model_parser {
 namespace paddle {
 namespace cpp {
 
@@ -230,4 +230,4 @@ class ProgramDescAPI {
 
 }  // namespace cpp
 }  // namespace paddle
-}  // namespace infrt
+}  // namespace model_parser

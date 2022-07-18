@@ -17,7 +17,7 @@
 #include <algorithm>
 #include <limits>
 
-namespace infrt {
+namespace model_parser {
 namespace paddle {
 namespace pb {
 
@@ -36,4 +36,4 @@ ProgramDesc::AddBlock<framework_proto::BlockDesc>() {
 
 }  // namespace pb
 }  // namespace paddle
-}  // namespace infrt
+}  // namespace model_parser

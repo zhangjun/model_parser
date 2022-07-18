@@ -23,7 +23,7 @@
 #include "common/common.h"
 #include "common/object.h"
 
-namespace infrt {
+namespace model_parser {
 namespace paddle {
 using common::Target;
 
@@ -104,4 +104,4 @@ class Tensor : public Shared<_Tensor_> {
 };
 
 }  // namespace paddle
-}  // namespace infrt
+}  // namespace model_parser

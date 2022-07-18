@@ -16,7 +16,7 @@
 
 #include "common/common.h"
 
-namespace infrt {
+namespace model_parser {
 namespace paddle {
 
 _Variable* Scope::FindVar(const std::string& name) const {
@@ -41,4 +41,4 @@ std::vector<std::string> Scope::var_names() const {
 }
 
 }  // namespace paddle
-}  // namespace infrt
+}  // namespace model_parser

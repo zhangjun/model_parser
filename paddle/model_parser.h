@@ -30,7 +30,7 @@
 #include "paddle/phi/core/dense_tensor.h"
 #endif
 
-namespace infrt {
+namespace model_parser {
 namespace paddle {
 namespace framework_proto = ::paddle::framework::proto;
 
@@ -65,4 +65,4 @@ void DeserializeFromStream(std::istream& is,
 #endif
 
 }  // namespace paddle
-}  // namespace infrt
+}  // namespace model_parser

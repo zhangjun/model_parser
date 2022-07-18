@@ -17,7 +17,7 @@
 #include <string>
 #include <type_traits>
 
-namespace infrt {
+namespace model_parser {
 namespace common {
 
 class RefCount {
@@ -150,4 +150,4 @@ void Shared<T>::Reset(T* x) {
 }
 
 }  // namespace common
-}  // namespace infrt
+}  // namespace model_parser
