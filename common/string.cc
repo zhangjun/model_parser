@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "paddle/infrt/common/string.h"
+#include "common/string.h"
 
 #include <stdarg.h>
 

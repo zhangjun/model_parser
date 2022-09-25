@@ -1,3 +1,11 @@
+/*
+ * @Author: Zhang Jun ewalker@live.cn
+ * @Date: 2022-09-25 12:12:57
+ * @LastEditors: Zhang Jun ewalker@live.cn
+ * @LastEditTime: 2022-09-25 15:59:36
+ * @FilePath: /paddle/Users/apple/Downloads/mydev/model_parser/common/buffer.cc
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 // Copyright (c) 2021 PaddlePaddle Authors. All Rights Reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,7 +20,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "paddle/infrt/common/buffer.h"
+#include "common/buffer.h"
 
 #include <stdarg.h>
 #include <stdio.h>
@@ -44,7 +52,7 @@ void Buffer::Resize(uint32_t alignment, uint32_t size) {
   }
 }
 
-void Buffer::SetTarget(const infrt::common::Target& target) {
+void Buffer::SetTarget(const model_parser::common::Target& target) {
   target_ = target;
   memory_mng_cache_ = MemoryManager::Global().RetrieveSafely(target_.arch);
 }
@@ -59,7 +67,7 @@ void Buffer::ResizeLazy(uint32_t alignment, uint32_t size) {
   Resize(alignment, size);
 }
 
-void Buffer::Resize(uint32_t size, const infrt::common::Target& target) {
+void Buffer::Resize(uint32_t size, const model_parser::common::Target& target) {
   if (target.arch != target_.arch) {
     Free();
     SetTarget(target);
@@ -69,7 +77,7 @@ void Buffer::Resize(uint32_t size, const infrt::common::Target& target) {
 
 void Buffer::Resize(uint32_t alignment,
                     uint32_t size,
-                    const infrt::common::Target& target) {
+                    const model_parser::common::Target& target) {
   if (target.arch != target_.arch) {
     Free();
     SetTarget(target);
@@ -77,7 +85,7 @@ void Buffer::Resize(uint32_t alignment,
   Resize(alignment, size);
 }
 
-void Buffer::ResizeLazy(uint32_t size, const infrt::common::Target& target) {
+void Buffer::ResizeLazy(uint32_t size, const model_parser::common::Target& target) {
   if (target.arch != target_.arch) {
     Free();
     SetTarget(target);
@@ -87,7 +95,7 @@ void Buffer::ResizeLazy(uint32_t size, const infrt::common::Target& target) {
 
 void Buffer::ResizeLazy(uint32_t alignment,
                         uint32_t size,
-                        const infrt::common::Target& target) {
+                        const model_parser::common::Target& target) {
   if (target.arch != target_.arch) {
     Free();
     SetTarget(target);

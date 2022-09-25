@@ -1,3 +1,11 @@
+/*
+ * @Author: Zhang Jun ewalker@live.cn
+ * @Date: 2022-09-25 12:12:57
+ * @LastEditors: Zhang Jun ewalker@live.cn
+ * @LastEditTime: 2022-09-25 15:57:54
+ * @FilePath: /paddle/Users/apple/Downloads/mydev/model_parser/common/global.h
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 // Copyright (c) 2021 PaddlePaddle Authors. All Rights Reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,20 +22,20 @@
 
 #pragma once
 
-#include <mlir/IR/MLIRContext.h>
+// #include <mlir/IR/MLIRContext.h>
 
-#include "paddle/infrt/tensor/dense_host_tensor.h"
+// #include "paddle/infrt/tensor/dense_host_tensor.h"
 
 namespace model_parser {
 
 // global variables
 class Global {
  private:
-  static mlir::MLIRContext *context;
+  // static mlir::MLIRContext *context;
   Global();
 
  public:
-  static mlir::MLIRContext *getMLIRContext();
+  // static mlir::MLIRContext *getMLIRContext();
 };  // class Global
 
 }  // namespace model_parser

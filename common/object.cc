@@ -1,3 +1,11 @@
+/*
+ * @Author: Zhang Jun ewalker@live.cn
+ * @Date: 2022-09-25 12:12:57
+ * @LastEditors: Zhang Jun ewalker@live.cn
+ * @LastEditTime: 2022-09-25 15:35:42
+ * @FilePath: /paddle/Users/apple/Downloads/mydev/model_parser/common/object.cc
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 // Copyright (c) 2021 PaddlePaddle Authors. All Rights Reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,7 +20,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "paddle/infrt/common/object.h"
+#include "common/object.h"
 
 namespace model_parser {
 namespace common {}  // namespace common

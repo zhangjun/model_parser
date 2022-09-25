@@ -1,10 +1,10 @@
 core_gather_headers()
 set(core_includes
-    "${core_includes};infrt/common/dtype.def"
+    "${core_includes};common/dtype.def"
     CACHE INTERNAL "")
 
 gather_srcs(
-  infrt_src
+  paddle_src
   SRCS
   dtype.cc
   global.cc
