@@ -31,6 +31,7 @@ include_directories("${CMAKE_CURRENT_SOURCE_DIR}")
 add_subdirectory(common)
 add_subdirectory(support)
 add_subdirectory(paddle)
+add_subdirectory(examples)
 
 cc_library(
   model_parser SHARED
