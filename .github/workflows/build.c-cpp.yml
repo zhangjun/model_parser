@@ -1,0 +1,35 @@
+name: model_parser C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  ubuntu-build:
+    if: "!contains(github.event.commits[0].message, '[skip ci]')"
+    name: build Ubuntu
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: cmake build
+      run: |
+        mkdir build && cd build
+        cmake .. -DWITH_MLIR=ON
+        make -j4
+
+  macos-build:
+    if: "!contains(github.event.commits[0].message, '[skip ci]')"
+    name: build macOS
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: cmake build
+      run: |
+        mkdir build && cd build
+        cmake .. -DWITH_MLIR=ON
+        make -j4
